@@ -4,5 +4,7 @@
 	"extension": ["ts"],
 	"recursive": true,
 	"require": "ts-node/register",
-	"timeout": 180000
+	"timeout": 180000,
+	"reporter": "node_modules/mochawesome",
+	"reporter-option": ["autoOpen=true"]
 }
