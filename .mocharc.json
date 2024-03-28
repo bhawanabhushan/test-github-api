@@ -1,0 +1,8 @@
+{
+	"file": ["./tests/start.ts"],
+	"spec": ["./tests/specs/*.spec.ts"],
+	"extension": ["ts"],
+	"recursive": true,
+	"require": "ts-node/register",
+	"timeout": 180000
+}

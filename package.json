@@ -1,0 +1,38 @@
+{
+	"name": "test-github-api",
+	"version": "1.0.0",
+	"description": "",
+	"type": "commonjs",
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"husky": "husky",
+		"knip": "knip",
+		"lint": "biome check . --apply",
+		"format": "biome format . --write",
+		"fix": "pnpm format && pnpm lint",
+		"check": "biome ci .",
+		"latest": "pnpm update --latest",
+		"test": "mocha"
+	},
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=8"
+	},
+	"keywords": [],
+	"author": "bhawanabhushan",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.2",
+		"@types/mocha": "^10.0.6",
+		"@types/node": "^20.11.30",
+		"axios": "^1.6.8",
+		"dotenv": "^16.4.5",
+		"husky": "^9.0.11",
+		"knip": "^5.5.0",
+		"mocha": "^10.3.0",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.7.1",
+		"typescript": "^5.4.3"
+	},
+	"packageManager": "pnpm@8.15.5"
+}
