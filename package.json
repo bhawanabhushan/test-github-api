@@ -10,6 +10,7 @@
 		"fix": "pnpm format && pnpm lint",
 		"check": "biome ci .",
 		"latest": "pnpm update --latest",
+		"build": "node build.mjs",
 		"test": "mocha"
 	},
 	"engines": {
@@ -23,8 +24,12 @@
 		"@biomejs/biome": "^1.6.2",
 		"@types/mocha": "^10.0.6",
 		"@types/node": "^20.11.30",
+		"@typescript-eslint/parser": "^7.4.0",
 		"axios": "^1.6.8",
 		"dotenv": "^16.4.5",
+		"esbuild": "^0.20.2",
+		"esbuild-plugin-eslint": "^0.3.12",
+		"glob": "^10.3.12",
 		"husky": "^9.0.11",
 		"mocha": "^10.3.0",
 		"mochawesome": "^7.1.3",
