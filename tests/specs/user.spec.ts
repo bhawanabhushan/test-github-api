@@ -74,5 +74,14 @@ describe("GitHub API Test", () => {
 			assert(login === userLogin, "Incorrect login name!");
 			assert(bio === bioUpdate, "Bio not updated");
 		});
+
+		it("Update User blog with valid Token", async () => {
+			const blogUpdate = "Blog Updated";
+			const response = await patch(userUrl, { blog: blogUpdate }, { headers: getHeadersWithAuthorization(gitHubToken as string) });
+			assert(response.status === 200, "HTTP Code should be 200");
+			const { login, blog } = response.data;
+			assert(login === userLogin, "Incorrect login name!");
+			assert(blog === blogUpdate, "Blog not updated");
+		});
 	});
 });
